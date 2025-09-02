@@ -64,6 +64,18 @@
 # print(vote)
 
 
-sal = float(input("Salary: "))
-tax = sal*(0.1, 0.2) [sal > 50000]
-print(tax)
+# sal = float(input("Salary: "))
+# tax = sal*(0.1, 0.2) [sal > 50000]
+# print(tax)
+
+
+
+# age = 21
+# if (age >= 18):
+#     print("You are eligible to apply for liscence.")
+
+
+
+# we can also use if if if instead of using elif
+# -------------if ------------                     ------------elif------------
+# jitny bhi "if" hongy wo sb check hongy.        agr if satify nhi kryga condition tou elif pr ayega. warna nhi
