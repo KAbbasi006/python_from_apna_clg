@@ -85,3 +85,145 @@
 # #Q. Write a program to find the occurence of "$" in a string.
 # str = "I have $5 amd i spent $$ $2"
 # print(str.count("$"))
+
+
+
+# # Write a program to print grade of student by taking user input.
+# marks = float(input("Enter your marks: "))
+# if(marks>=90):
+#     grade = "A"
+# elif(marks >=80 and marks <90):
+#     grade = "B"
+# elif(marks>=70 and marks <80):
+#     grade = "C"
+# elif(marks >= 60 and marks <70):
+#     grade = "D"
+# else:
+#     grade = "Fail"
+# print("Grade of the student:->", grade)
+
+
+
+
+# # Q. Write a program to check if a number entered by a  user is odd/even.
+# num = int(input("Enter a number: "))
+# if (num % 2 == 0):
+#     print(num, "is an Even number")
+# else:
+#     print(num, "is an Odd number")
+
+
+
+
+# # Q. Write a program to find greatest of 3 numbers entered by the user.
+# first = int(input("Enter first number: "))
+# second = int(input("Enter second number: "))
+# third = int(input("Enter third number: "))
+
+# if (first >= second and first >= third):
+#     print(first, "is the greatest number.")
+# elif (second >= first and second >= third):
+#     print(second, "is the greatest number.")
+# else: 
+#     print(third, "is the greatest number.")
+
+
+
+
+# # WAP to check if a number is a multiple of 7 or not?
+# numm = int(input("Enter a number: "))
+# if (numm % 7 == 0):
+#     print(numm, "is a multiple of 7 ✅")
+# else: 
+#     print(numm, "is not a multiple of 7 ❌")
+
+
+
+
+
+
+# Q. WAP to ask the user to enter names of their 3 fav movies and store them in a list.
+
+# # Solution 1            --------BETTER -----
+# a = input("Enter your first favourite movie name: ")
+# b = input("Enter your second favourite movie name: ")
+# c = input("Enter your third favourite movie name: ")
+# abc = [a, b, c]
+# print(abc)
+
+# # Solution 2            --------BEST-----✅✅✅✅✅✅✅✅✅
+# movies = []
+# mov1 = input("Enter your first favourite movie name: ")
+# mov2 = input("Enter your second favourite movie name: ")
+# mov3 = input("Enter your third favourite movie name: ")
+
+# movies.append(mov1)
+# movies.append(mov2)
+# movies.append(mov3)
+# print(movies)
+
+# # Solution 3            --------BESt -----✅✅✅✅✅✅✅✅✅
+# movies = []
+# mov = input("Enter your first favourite movie name: ")
+# movies.append(mov)
+# mov = input("Enter your second favourite movie name: ")
+# movies.append(mov)
+# mov = input("Enter your third favourite movie name: ")
+# movies.append(mov)
+# print(movies)
+
+# # Solution 4            --------BEST -----✅✅✅✅✅✅✅✅✅
+# movies = []
+# movies.append(input("Enter your first favourite movie name: "))
+# movies.append(input("Enter your second favourite movie name: "))
+# movies.append(input("Enter your third favourite movie name: "))
+# print(movies)
+
+
+
+
+
+
+# Q. WAP to check if a list contains a "Palindrome" of elts.(hint: use copy() method)  
+# example:    ma'am      racecar        maham
+# to check for list  ------------->>     [1, 2, 3, 2, 1]     [1, "ab", 2, "ab", 1]
+# #  Solution:
+
+# a =  [1, 2, 3, 2, 1, 8] 
+# copy_a = a.copy()
+# copy_a.reverse()
+# if (copy_a == a):
+#     print("Palindrome ✅")
+# else:
+#     print("Not a palindrome ❌❌❌❌")
+
+
+
+
+# list1 = [1, "ab", 2, "ab", 1]
+
+# copy_list1 = list1.copy()
+# copy_list1.reverse()
+
+# if(copy_list1 == list1):
+#     print("Palindrome")
+# else:
+#     print("Not a palindrme")
+
+
+
+
+# Q. WAP to count no of students with the "A" grade in the following tuple 
+#then store the values in list
+# then sort them from "A"  to "D"
+
+# # Solution
+# grade = ("A","A", "B", "D",  "B","C",  "A", "B", "D",  "B","C" ,"A","B")
+# print(grade.count("A")) # 4
+
+# a = list(grade)
+# print(a)
+
+# a.sort()
+# print(a)
+
