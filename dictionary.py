@@ -1,4 +1,8 @@
-# Dictionaries: are used to store data in "Key : Value" pairs
+# Dictionaries: are used to store data in "Key : Value" pairs. Dicionary main koi indexing nhi hoti balky ye
+# aesy access hoty hain.------------->         print(info["name"]) # Shahzeb
+# Duplicate keys not allowed agr duplicate likhengy tou existing value over write hojaegi.
+
+
 # They are: 
 #       unordered
 #       mutable (changeable)
@@ -32,6 +36,7 @@
 
 # # ------------------------NULL DICTIONARY --------------
 # null_dict = {}
+# print(null_dict) // {}
 # null_dict["name"] = "Komal"
 # print(null_dict)
 
@@ -70,7 +75,8 @@
 #     "age": 98,
 # }
 # print(student.keys()) # dict_keys(['name', 'sub_marks', 'age'])
-# print(len(student))
+# print(list(student.keys())) # ['name', 'sub_marks', 'age']
+# print(len(list(student.keys()))) # 3
 
 
 
@@ -87,7 +93,7 @@
 #     },
 #     "age": 98,
 # }
-# print(student.values())
+# print(student.values()) # dict_values(['Komal', {'eng': 58, 'urdu': 98, 'maths': 99}, 98])
 
 
 
@@ -104,14 +110,18 @@
 #     },
 #     "age": 98,
 # }
-# # print(student.items())
+# print(student.items())# dict_items([('name', 'Komal'), ('sub_marks', {'eng': 58, 'urdu': 98, 'maths': 99}), ('age', 98)])
 # a = list(student.items())
+# print(a) # [('name', 'Komal'), ('sub_marks', {'eng': 58, 'urdu': 98, 'maths': 99}), ('age', 98)]
 # print(a[1]) # ('sub_marks', {'eng': 58, 'urdu': 98, 'maths': 99})
+# print(a[0]) # ('name', 'Komal')
 
 
 
-
-# 4. .get() ----> returns the key according to value
+# 4. .get() ----> returns the value according to key.. we can acces value as ---> print(student["name"]) but 
+# to overcome error we use this .get()
+# # print(student["full_name"]) # Error (no key found)
+# print(student.get("full_name")) # None
 
 
 # student = {
@@ -136,14 +146,20 @@
 
 # 5 .update(newDict) inserts the specified items to the dictionary
  
-student = {
-    "name": "Komal",
-    "sub_marks":{
-        "eng": 58,
-        "urdu": 98, 
-        "maths": 99,
-    },
-    "age": 98,
-}
-student.update({"city": "Karachi"})
-print(student)
+# student = {
+#     "name": "Komal",
+#     "sub_marks":{
+#         "eng": 58,
+#         "urdu": 98, 
+#         "maths": 99,
+#     },
+#     "age": 98,
+# }
+# student.update({"city": "Karachi"})
+# print(student) # {'name': 'Komal', 'sub_marks': {'eng': 58, 'urdu': 98, 'maths': 99}, 'age': 98, 'city': 'Karachi'}
+# letters = {
+#     "a" : "apple",
+#     "b": "ball"
+# }
+# student.update(letters)
+# print(student) # {'name': 'Komal', 'sub_marks': {'eng': 58, 'urdu': 98, 'maths': 99}, 'age': 98, 'city': 'Karachi', 'a': 'apple', 'b': 'ball'}

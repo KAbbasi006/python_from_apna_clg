@@ -145,3 +145,42 @@
 # print(student["sub_marks"]["maths"]) # to access value in NESTED dictionary
 # student["sub_marks"]["maths"] = 100
 # print(student)
+
+
+
+
+# imp point:    dictionary main hm keys jo hain wo zyada tar string ko banaty hain like {"name": value} lekin 
+# hm keys main str k elava int, float, tuples ki b keys bana skty hain bcz they are immutable. sirf list aur dictionary ko "key" nahi bana skty kyun k ye change ho jaty hain
+
+
+
+
+
+
+
+
+
+
+
+
+# null_set = set()
+# print(null_set)# set()
+# print(type(null_set))# <class 'set'>
+# print("\n")
+
+# null_dictionary = {}
+# print(null_dictionary)# {}
+# print(type(null_dictionary))# <class 'set'>
+# print("\n")
+
+# null_list = []
+# print(null_list)# []
+# print(type(null_list)) # <class 'list'>
+# print("\n")
+
+# null_tuple = ()
+# print(null_tuple) # ()
+# print(type(null_tuple)) # <class 'tuple'>
+# single_tup = (1,) # always written with comma
+# print(single_tup) #(1,)
+

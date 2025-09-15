@@ -227,3 +227,137 @@
 # a.sort()
 # print(a)
 
+# # Q. Store following words/ meanings in python dictionary
+# # table:      "a piece of furniture",    "list of facts and figures"
+# #                 cat :   "a small animal"
+# # We can store double values in a single key in form of tuple or list
+
+# # Solution :
+# dictionary = {
+#     "table": ["a piece of furniture",    "list of facts and figures"],
+#     "cat": "a small animal"
+# }
+# print(dictionary)
+
+
+# # Q. you are given a list of subjects for students. Assume one classroom is required for 1 subject. How many 
+# # class rooms are needed by all students.
+# # "python","java","C++", "python", "javascript", "java",  "python", "java" , "C++", "C"
+
+# sub = {"python","java","C++", "python", "javascript", "java",  "python", "java" , "C++", "C"}
+# print(sub) # {'java', 'C++', 'C', 'python', 'javascript'}
+# print(len(sub)) # 5
+
+
+# # Q. WAP to enter marks of 3 subjects from the user and store them in a dictionary
+# # Start with an empty dictionary and add one by one . use subject name as key and marks as value.
+
+# marks = {}
+# eng = float(input("Enter english maks: "))
+# marks.update({"eng": eng })
+# urdu = float(input("Enter urdu maks: "))
+# marks.update({"urdu": urdu })
+# maths = float(input("Enter maths maks: "))
+# marks.update({"maths": maths })
+# print(marks)
+
+
+
+
+# Q. Figure out a way to store 9 and 9.0 as separate values in the set.
+
+# # Solution 1:
+# maths = {9, 9.0}
+# print(maths) # {9}
+# maths = {9," 9.0"}
+# print(maths) # {9, ' 9.0'}
+
+# # Solution 2: (we can add these vales as tuples bcz they are imuutable)(cant store in dict)
+# maths = {
+#     ("float", 9.0),
+#     ("int", 9)
+#     }
+# print(maths) # {('int', 9), ('float', 9.0)}
+
+
+# # ----------------------------------While Loop -------------------------------------------------
+# # Q. Print numbers from 1 to 100
+# x = 1
+# while x <=100:
+#     print(x)
+#     x +=1
+# print("-------------------------------Finished--------------------------------------")
+
+
+
+
+# # Q. print numbers from 50 to 1
+# # Solution:
+# y = 50
+# while y >=1:
+#     print(y)
+#     y -=1
+# print("----------------------Stop----------------------------")
+
+
+# # Q. Print the multiplication table of a  number n
+# # Solution:
+
+# m = int(input("Enter a number: "))
+# i=1
+# while i <=10:
+#     print(m,"x", i, "=",   m*i)
+#     i+=1
+# print("It's table of", m)
+
+
+
+# # Q. Print the elements of the following list using a Loop 
+# # [1, 4, 9, 16, 25, 36, 49, 64, 81, 100] 
+
+# Traverse: means list ya tuple k 1, 1 elt pr jana ya travel krna
+
+# num = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# idx = 0
+# while idx<len(num):
+#     print(num[idx])
+#     idx +=1
+
+
+
+# Q.  Search for a number x in this tuple using loop. [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+# nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# x = 36
+# i = 0
+# while i < len(nums):
+#     if (nums[i] == x):
+#         print("Found at index", i)
+#     i +=1
+    
+    
+# nums = [1, 4, 9, 16, 25, 36, 49, 64, 81,25, 100]
+# x = 25
+# i = 0
+# while i < len(nums):
+#     if (nums[i] == x):
+#         print("Found at index", i)
+#     else:
+#         print("Finding........")
+#     i +=1
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
